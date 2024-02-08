@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 import "./spinner.css";
-export class spinner extends Component {
-  render() {
+const spinner = () => {
     return (
       <div>
-        <div className="spinner mx-auto">
+        <div className="spinner mx-auto my-4">
           <div></div>
           <div></div>
           <div></div>
@@ -14,7 +13,6 @@ export class spinner extends Component {
         </div>
       </div>
     );
-  }
 }
 
 export default spinner;

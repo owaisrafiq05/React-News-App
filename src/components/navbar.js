@@ -4,11 +4,10 @@ import {
 } from "react-router-dom";
 
 
-export class navbar extends Component {
-  render() {
+const Navbar = () => {
     return (
       <div>
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <nav className="navbar fixed-top navbar-expand-lg bg-body-tertiary">
           <div className="container-fluid">
             <Link className="navbar-brand" to="/">
               InfoPulse
@@ -30,7 +29,7 @@ export class navbar extends Component {
             >
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <Link className="nav-link active" aria-current="page" to="/app">
+                  <Link className="nav-link active" aria-current="page" to="/General">
                     Home
                   </Link>
                 </li>
@@ -49,11 +48,11 @@ export class navbar extends Component {
                     Entertainment
                   </Link>
                 </li>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <Link className="nav-link" to="/General">
                     General
                   </Link>
-                </li>
+                </li> */}
                 <li className="nav-item">
                   <Link className="nav-link" to="/Health">
                     Health
@@ -81,6 +80,5 @@ export class navbar extends Component {
       </div>
     );
   }
-}
 
-export default navbar;
+export default Navbar;

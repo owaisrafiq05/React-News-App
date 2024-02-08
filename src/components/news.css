@@ -101,3 +101,23 @@
    body{
       font-family: "Public Sans", sans-serif;
    }
+
+
+   .row1{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+   }
+
+   @media screen and (max-width: 991px){
+      .row1{
+         display: inline-block;
+      }
+   }
+
+
+   /* .container1{
+      overflow-y: hidden;
+      overflow-x: hidden;
+   } */
